@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/main.css" rel="stylesheet" >
+  <link href="css/sec.css" rel="stylesheet" >
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+  <title> عن الجامعة | جامعة حائل</title>
+  <link rel="icon" href="https://alkhalijnow.co/content/uploads/2023/09/18/adddb51f1c.jpg"/>
+  <style>
+    @keyframes fade {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    #myText {
+      background-color: rgb(16, 173, 95);
+      animation: fade 2s infinite;
+    }
+    .accordion-header {
+    
+    direction: rtl;
+  }
+  footer{direction: rtl;}
+  footer a{color: white;text-decoration: none;}
+  
+
+    .back{background: rgb(14, 38, 54);}
+  </style>
+  
+</head>
+<body >
+    <div class="navbar navbar-expand-md back navbar-dark text-white my-1 " >
+        <div class="container ">
+            <a href="#" class="navbar-brand">Hail university <img src="img/hail.png" style="width: 50px;" alt=""></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenuu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-center " id="mainmenuu">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="navbar-item"><a href="#" class="nav-link">الصفحة الرئيسية</a></li>
+                    <li class="navbar-item"><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
+                    
+                    <li class="navbar-item "><a href="#footer" class="nav-link">تواصل معنا</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--<img width="100%" src="" alt="" >-->
+   
+
+    <!---------------     Hero        -------------- -->
+    <section id="hero" class="back text-light text-center text-sm-start py-5 ">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center " style="text-align: end;">
+              <img class="img-fluid w-50 rounded-10" src="img/hail.png" alt="" >
+                <div class="py-5">
+                    <h1 class="display-1">جامعة <span class="text-warning">حائل</span></h1>
+                    <p class="py-3"> جامعة سعودية حكومية تقدم برامج أكاديمية لإعداد خريجين مؤهلين لسوق العمل، وتقدم أبحاثاً علمية تخدم المجتمع بأعلى معايير الجودة، وتستفيد من موارد الجامعة البشرية والفنية للوصول إلى مجتمع المعرفة. </p>
+                    <a href="https://www.uoh.edu.sa/en/about-us"><button class="btn btn-warning " id="open-btn" > <-- عن الجامعة </button></a>
+                    <hr>
+                    <div class="text-center">
+                      <strong ><span class="text-warning">فهد سعود عثمان الشمري</span></strong><br>
+                      <strong >ID : 201800621</strong>
+                    </div>
+                    
+                    
+                    
+
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+        
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!---------------     Faq        -------------- -->
+    <section id="faq" class="py-5">
+        <div class="container text-center" >
+            <h2 class="text-center mb-3">الأسئلة الشائعة</h2>
+            <div class="accordion " id="accordionExample">
+                <div class="accordion-item back text-light">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <span class=""> كم رقم مكتب الدكتور محمد؟ </span>
+                      
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body ">
+                      <strong>  s295  </strong> 
+                         
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-dark text-light">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      احتاج ايميل الدكتور ضياء ؟ 
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      d.uliyan@liveuohedu.onmicrosoft.com <br>
+                      <button onclick="copyEmail()" class="btn btn-warning">نسخ</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-dark text-light">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      ما هي فكرة المشروع نهاية مقرر الماده؟
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>هو مشروع بسيط يعتمد على فهمك للمقرر 
+                        واثبات معلوماتك</strong> 
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-dark text-light">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      ماهو التدريب التعاوني وما فكرته؟
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>هو عبارة عن تطيبق كل ما درسته في احدى الشركات المختصه في مجالك و يجعلك تمارس الحياة الوظيفيه و تتيح لك الفرصه بأختيار الشركه المناسبه لك</strong> 
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-dark text-light">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      متى تاسست جامعة حائل ؟
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>في تاريخ 7 يونيو 2005</strong> 
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-dark text-light">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      متى فتح واغلاق مكتبة الكليه؟
+                    </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>تفتح الساعه ٨ صباحًا وتغلق الساعه ٢ مساءً</strong> 
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-dark text-light">
+                  <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      ماهي خطوات الاستعلام عن نتائج الاختبارات ؟
+                    </button>
+                  </h2>
+                  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>البنر - السجل الاكاديمي - كشف الدرجات</strong> 
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-dark text-light">
+                  <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                      كيف يمكن معالجة الفشل واستحضار عوامل النجاح في الحياة الجامعية؟
+                    </button>
+                  </h2>
+                  <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <ul dir="rtl" class="text-end">
+                        <li>اطلع دوماً على آخر المستجدات .</li>
+                        <li>حضر دائماً قبل ذهابك لقاعة الدراسة .</li>
+                        <li>تعرف على أساتذتك .</li>
+                        <li>رتب أولوياتك، واحضر الحفلات .</li>
+                        <li>استمر بالتطور .</li>
+                        <li>قرر أي تخصص تريد والتزم به .</li>
+                        <li>لا تتردد في طلب المساعدة .</li>
+                      </ul> 
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    
+
+
+
+    <!---------------     Faq        -------------- -->
+
+    <footer id="bottom" id="footer" class="back text-light py-3">
+      <div id="footer" class="oe_structure oe_structure_solo">
+        <div class="modal" id="signlanguage" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                <i class="far fa-times"></i>
+                </button>
+              </div>
+              <div class="modal-body video-embed">
+                <iframe width="100%" height="600" id="sign_lang_YT_videos" src frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <section class="s_text_block footer-content sct-footer-option-2" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+          <div class="container">
+            <div class="border-b">
+              <div class="row">
+                <div class="col-lg-2 col-sm-6 footer_list o_colored_level">
+                  <div class="item" data-original-title title aria-describedby="tooltip562645">
+                    <h4 class="py-5">عن الجامعة</h4>
+                    <ul>
+                        <li>مخطط الجامعة</li>
+                        <li>سياسة الخصوصية</li>
+                        <li data-original-title title aria-describedby="tooltip91071">
+                          <a href="/web/content/75348" data-original-title title>السياسة &amp;المعايير</a>
+                        </li>
+                      <ul>
+                        <li>
+                        <a href="/web/content?model=ir.attachment&amp;id=103319" data-original-title title>خطة الدورات التدريبية للعام الدراسي 2023/2024</a>
+                        <br/>
+                          </li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 footer_list o_colored_level" style>
+                  <div class="item">
+                    <h4 class="py-5">الخدمات</h4>
+                    <ul>
+                        <li data-original-title title aria-describedby="tooltip294923">بوابة تراسول</li>
+                        <li>
+                        <a href="https://login.uoh.edu.sa/_layouts/PG/login.aspx?ReturnUrl=%2Fsso%2Fdefault.aspx" target="_blank" data-original-title title>الدخول الموحد (SSO)</a>
+                        </li>
+                        <li>
+                        <a href="https://apps.uoh.edu.sa/dir/" target="_blank" data-original-title title>الهاتف</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 footer_list o_colored_level" style>
+                  <div class="item">
+                    <h4 class="py-5">روابط مفيدة</h4>
+                    <ul data-original-title title aria-describedby="tooltip592063">
+                      <li>
+                      <a href="https://moe.gov.sa/ar/pages/default.aspx" target="_blank">وزارة التربية والتعليم&nbsp;</a>
+                      </li>
+                      <li>
+                      <a href="https://dga.gov.sa/" target="_blank">هيئة الحكومة الرقمية</a>
+                      </li>
+                      <li>
+                      <a href="https://www.iam.gov.sa/authservice//userauthservice?lang=ar" target="_blank">الدخول الموحد الوطني</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 o_colored_level" style data-original-title title aria-describedby="tooltip304053">
+                <div class="item">
+                  <h4 class="py-5"> التواصل معنا</h4>
+                    <div class="contact_details">
+                        <div class="con">
+                            <i class="material-icons" style="font-size:20px;color: goldenrod;">&#xe0c8;</i>
+                            <span>جامعة حائل - المملكة العربية السعودية&nbsp;</span><br/>
+                        </div>
+                        <div class="con">
+                          <i class="fas fa-phone" style="font-size:20px;color: goldenrod;"></i>
+                          <span>920005995</span>
+                        </div>
+     
+                        <div class="con">
+                          <i class="far fa-clock" style="font-size:20px;color: goldenrod;"></i>
+                          <span>8:30 AM&nbsp;- 2:30 PM</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              
+           </div>
+        </div>
+      </div>
+
+
+
+     
+     
+      </div>
+      
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/main.js"></script> 
+<script>
+  function copyEmail() {
+    var email = "d.uliyan@liveuohedu.onmicrosoft.com";
+    navigator.clipboard.writeText(email).then(function() {
+      alert("تم نسخ البريد الإلكتروني: " + email);
+    }, function() {
+      alert("حدث خطأ أثناء النسخ.");
+    });
+  }
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/main2.js"></script>
+
+</body>
+</html>
