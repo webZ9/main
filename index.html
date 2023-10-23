@@ -14,25 +14,7 @@
   <title> عن الجامعة | جامعة حائل</title>
   <link rel="icon" href="https://alkhalijnow.co/content/uploads/2023/09/18/adddb51f1c.jpg"/>
   <style>
-    @keyframes fade {
-      0% { opacity: 0; }
-      50% { opacity: 1; }
-      100% { opacity: 0; }
-    }
-
-    #myText {
-      background-color: rgb(16, 173, 95);
-      animation: fade 2s infinite;
-    }
-    .accordion-header {
-    
-    direction: rtl;
-  }
-  footer{direction: rtl;}
-  footer a{color: white;text-decoration: none;}
   
-
-    .back{background: rgb(14, 38, 54);}
   </style>
   
 </head>
@@ -48,7 +30,7 @@
             <div class="collapse navbar-collapse text-center " id="mainmenuu">
                 <ul class="navbar-nav ms-auto ">
                     <li class="navbar-item"><a href="#" class="nav-link">الصفحة الرئيسية</a></li>
-                    <li class="navbar-item"><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
+                    <li class="navbar-item"><a href="#faq" class="nav-link">بوت الأسئلة </a></li>
                     
                     <li class="navbar-item "><a href="#footer" class="nav-link">تواصل معنا</a></li>
                     
@@ -69,12 +51,12 @@
                 <div class="py-5">
                     <h1 class="display-1">جامعة <span class="text-warning">حائل</span></h1>
                     <p class="py-3"> جامعة سعودية حكومية تقدم برامج أكاديمية لإعداد خريجين مؤهلين لسوق العمل، وتقدم أبحاثاً علمية تخدم المجتمع بأعلى معايير الجودة، وتستفيد من موارد الجامعة البشرية والفنية للوصول إلى مجتمع المعرفة. </p>
-                    <a href="https://www.uoh.edu.sa/en/about-us"><button class="btn btn-warning " id="open-btn" > <-- عن الجامعة </button></a>
+                   
                     <hr>
                     <div class="text-center">
                       <strong ><span class="text-warning">فهد سعود عثمان الشمري</span></strong><br>
                       <strong >ID : 201800621</strong>
-                    </div>
+                    </div><hr>
                     
                     
                     
@@ -100,120 +82,15 @@
     <!---------------     Faq        -------------- -->
     <section id="faq" class="py-5">
         <div class="container text-center" >
-            <h2 class="text-center mb-3">الأسئلة الشائعة</h2>
-            <div class="accordion " id="accordionExample">
-                <div class="accordion-item back text-light">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <span class=""> كم رقم مكتب الدكتور محمد؟ </span>
-                      
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body ">
-                      <strong>  s295  </strong> 
-                         
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-dark text-light">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      احتاج ايميل الدكتور ضياء ؟ 
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      d.uliyan@liveuohedu.onmicrosoft.com <br>
-                      <button onclick="copyEmail()" class="btn btn-warning">نسخ</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-dark text-light">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      ما هي فكرة المشروع نهاية مقرر الماده؟
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>هو مشروع بسيط يعتمد على فهمك للمقرر 
-                        واثبات معلوماتك</strong> 
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-dark text-light">
-                  <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      ماهو التدريب التعاوني وما فكرته؟
-                    </button>
-                  </h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>هو عبارة عن تطيبق كل ما درسته في احدى الشركات المختصه في مجالك و يجعلك تمارس الحياة الوظيفيه و تتيح لك الفرصه بأختيار الشركه المناسبه لك</strong> 
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-dark text-light">
-                  <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      متى تاسست جامعة حائل ؟
-                    </button>
-                  </h2>
-                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>في تاريخ 7 يونيو 2005</strong> 
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-dark text-light">
-                  <h2 class="accordion-header" id="headingSix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                      متى فتح واغلاق مكتبة الكليه؟
-                    </button>
-                  </h2>
-                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>تفتح الساعه ٨ صباحًا وتغلق الساعه ٢ مساءً</strong> 
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-dark text-light">
-                  <h2 class="accordion-header" id="headingSeven">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                      ماهي خطوات الاستعلام عن نتائج الاختبارات ؟
-                    </button>
-                  </h2>
-                  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>البنر - السجل الاكاديمي - كشف الدرجات</strong> 
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-dark text-light">
-                  <h2 class="accordion-header" id="headingEight">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                      كيف يمكن معالجة الفشل واستحضار عوامل النجاح في الحياة الجامعية؟
-                    </button>
-                  </h2>
-                  <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <ul dir="rtl" class="text-end">
-                        <li>اطلع دوماً على آخر المستجدات .</li>
-                        <li>حضر دائماً قبل ذهابك لقاعة الدراسة .</li>
-                        <li>تعرف على أساتذتك .</li>
-                        <li>رتب أولوياتك، واحضر الحفلات .</li>
-                        <li>استمر بالتطور .</li>
-                        <li>قرر أي تخصص تريد والتزم به .</li>
-                        <li>لا تتردد في طلب المساعدة .</li>
-                      </ul> 
-                    </div>
-                  </div>
-                </div>
-                
-            </div>
-            
+          <img style="width: 20%;height: auto;" src="https://static.vecteezy.com/system/resources/previews/019/786/706/original/chatbot-icon-cute-smiling-robot-cartoon-character-illustration-png.png" alt="" >
+            <h2 class="text-center mb-3">بوت الأسئلة</h2>
         </div>
+        <div class="chat-container" dir="rtl">
+          <div id="chat-log"></div>
+          <input type="text" id="input-message" placeholder="اكتب سؤالك">
+          <a id="send-button" class="btn btn-success">إرسال</a>
+          <a id="clear-button" class="btn btn-danger">حذف الدردشة</a>
+       </div>
     </section>
 
     
@@ -341,15 +218,58 @@
 
 <script src="js/main.js"></script> 
 <script>
-  function copyEmail() {
-    var email = "d.uliyan@liveuohedu.onmicrosoft.com";
-    navigator.clipboard.writeText(email).then(function() {
-      alert("تم نسخ البريد الإلكتروني: " + email);
-    }, function() {
-      alert("حدث خطأ أثناء النسخ.");
-    });
+  var qaList = [
+      { question: "كم رقم مكتب الدكتور محمد", answer: "s295 رقم مكتب الدكتور محمد هو" },
+      { question: "احتاج ايميل الدكتور ضياء", answer: "d.uliyan@liveuohedu.onmicrosoft.com" },
+      { question: "ما هي فكرة المشروع نهاية مقرر المادة", answer: "هو مشروع بسيط يعتمد على فهمك للمقرر واثبات معلوماتك" },
+      { question: "احتاج ايميل الدكتور ضياء", answer: "d.uliyan@liveuohedu.onmicrosoft.com" },
+      { question: "ماهو التدريب التعاوني وما فكرته", answer: "و عبارة عن تطيبق كل ما درسته في احدى الشركات المختصه في مجالك و يجعلك تمارس الحياة الوظيفيه و تتيح لك الفرصه بأختيار الشركه المناسبه لك" },
+      { question: "متى تاسست جامعة حائل ", answer: "في تاريخ 7 يونيو 2005" },
+      { question: "متى فتح واغلاق مكتبة الكليه", answer: "تفتح الساعه ٨ صباحًا وتغلق الساعه ٢ مساءً" },
+      { question: "ماهي خطوات الاستعلام عن نتائج الاختبارات", answer: "البنر - السجل الاكاديمي - كشف الدرجات" },
+      { question: "كيف يمكن معالجة الفشل واستحضار عوامل النجاح في الحياة الجامعية", answer: "<li>اطلع دوماً على آخر المستجدات .</li><li>حضر دائماً قبل ذهابك لقاعة الدراسة .</li><li>تعرف على أساتذتك .</li><li>رتب أولوياتك، واحضر الحفلات .</li><li>استمر بالتطور .</li><li>قرر أي تخصص تريد والتزم به .</li><li>لا تتردد في طلب المساعدة .</li>" },
+      { question: "من هو عميد كلية علوم وهندسة الحاسب الالي", answer: "د/ احمد الصعب التميمي" },
+      { question: "كم عدد ساعات تخصص علوم الحاسب", answer: "132 ساعة" },
+      { question: "ماذا يحتاج الطالب الجامعي", answer: "القراءة من أهم المهارات التي يحتاجها الطالب خلال فترة الجامعة وبعدها، فالقراءة تزيد من خبرتك الثقافية والحياتية والمجتمعية وتجعلك شخص مثقفاً فاهماً واعياً لما يدور حولك في كافة المجالات وعلى رأسها مجال عملك وبجانبها المجالات الأخرى مما يجعلك تستطيع التحاور والتشاور مع الأشخاص الأخرين." },
+      { question: "ماذا يدرس الطالب في السنة التحضيرية", answer: "في أي من مسارين أم الطبي الصحي يشمل كليات الطب وطب االسنان و العلوم الطبية التطبيقية أو مسار العلمي الهندسي ويشمل كليات الهندسة ، العلوم ، علوم الحاسب والمعلومات." },
+      { question: "هل السنة التحضيرية اجباريه", answer: "تعتبر السنة التحضيرية إجبارية لجميع الطلبة المقبولين والمرشحين في مختلف البرامج" },
+      { question: "ما فائدة السنة التحضيرية", answer: "تتيح البرامج التحضيرية للطالب تحسين مهاراته الأكاديمية، وتطويرها في المجال الذي تم اختياره، الأمر الذي يحتاجه للنجاح في التعليم الجامعي، وتتمثل هذه المهارات في الكتابة الأكاديمية، وإدارة الوقت،" },
+      { question: "ماهي تخصصات المسار الصحي", answer: "المسار الصحي الموحد للكليات الصحية : الطب، طب الأسنان، الصيدلة والعلوم الطبية التطبيقية في تخصصاتها (علوم المختبرات الإكلينيكية، العلاج التنفسي، العلاج الوظيفي، تقنية القلب (القسطرة القلبية)، علوم الأشعة، الخدمات الطبية الطارئة، تقنية التخدير)." },
+      { question: "ماهي خطوات الاستعلام عن نتائج الاختبارات", answer: "البنر - السجل الاكاديمي - كشف الدرجات" },
+  ];
+
+  document.getElementById("send-button").addEventListener("click", function() {
+      var inputMessage = document.getElementById("input-message");
+      var chatLog = document.getElementById("chat-log");
+
+      var userQuestion = document.createElement("p");
+      userQuestion.innerHTML = "<span class='user-message'>أنت:</span><br><br><span class='u-message'> " + inputMessage.value+"</span><hr>";
+      chatLog.appendChild(userQuestion);
+
+      var answer = getAnswer(inputMessage.value);
+      var botAnswer = document.createElement("p");
+      botAnswer.innerHTML = "<span class='bot-message'>البوت:</span><br><br> " +"<span class='answer'>" +answer+"</span><hr>";
+      chatLog.appendChild(botAnswer);
+
+      inputMessage.value = "";
+  });
+
+  document.getElementById("clear-button").addEventListener("click", function() {
+      var chatLog = document.getElementById("chat-log");
+      chatLog.innerHTML = "";
+  });
+
+  function getAnswer(question) {
+      for (var i = 0; i < qaList.length; i++) {
+          if (question === qaList[i].question) {
+              return qaList[i].answer;
+          }
+      }
+      
+      return "عذرًا، لا يمكنني العثور على الإجابة المناسبة في الوقت الحالي.";
   }
-  </script>
+</script>
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/main2.js"></script>
