@@ -1,124 +1,52 @@
-$(document).ready(function() {
-  $('.open-btn').click(function() {
-    $('#loginModal').modal('show');
-  });
- 
-
-  $('.closeButton').click(function() {
-    $('#loginModal').modal('hide');
-  });
-
-  $('.java').click(function() {
-    $('#you_java iframe').attr('src', 'https://www.youtube.com/embed/d9xdTuvci88');
-    $('#you_java').modal('show');
-  });
-  
-  $('.c_plus').click(function() {
-    $('#you_c iframe').attr('src', 'https://www.youtube.com/embed/-nUZ1_YbgM4?si=OzNsNpxtdnmRLmb4');
-    $('#you_c').modal('show');
-  });
-  $('.intro_m').click(function() {
-    $('#you_intro iframe').attr('src', 'https://www.youtube.com/embed/Xh1vhtdP83A?si=pDIT-SLUCpNH-Ugp');
-    $('#you_intro').modal('show');
-  });
-  $('.logic_m').click(function() {
-    $('#you_logic iframe').attr('src', '');
-    $('#you_logic').modal('show');
-  });
-  
-  
-  
-  $('.closeButton').click(function() {
-    $('#you_java').modal('hide');
-    $('#you_java iframe').attr('src', '');
-    $('#you_c').modal('hide');
-    $('#you_c iframe').attr('src', '');
-    $('#you_intro').modal('hide');
-    $('#you_intro iframe').attr('src', '');
-    $('#you_logic').modal('hide');
-    $('#you_logic iframe').attr('src', '');
-  });
-
-
-  
- 
-  
-  function stopVideo() {
-    var iframe = document.getElementById('you');
-    var videoUrl = iframe.getAttribute('src');
-    iframe.setAttribute('src', '');
-    iframe.setAttribute('src', videoUrl);
-  }
-
-
-  $('#loginButton').click(function() {
-    var username = $('#username').val();
-    var password = $('#password').val();
-    var errorMessage = $('#error-message');
-
-    if (username === 'alzeeka' && password === 'java') {
-      // إنشاء ملف تعريف الارتباط
-      document.cookie = 'username=' + username + '; expires=30; path=/';
-      window.location.href = 'java.html';
-    } 
-    else if (username === 'programming1' && password === 'student')  {
-      // إنشاء ملف تعريف الارتباط
-      document.cookie = 'username=' + username + '; expires=30; path=/';
-      window.location.href = 'c.html';
-    }
-    else if (username === 'hail2023' && password === 'java') {
-      // إنشاء ملف تعريف الارتباط
-      document.cookie = 'username=' + username + '; expires=30; path=/';
-      window.location.href = 'java_hail.html';
-    }
-
-  else if (username === 'hhh' && password === '123') {
-  // إنشاء ملف تعريف الارتباط
-  document.cookie = 'username=' + username + '; expires=30; path=/';
-
-  var currentTime = new Date();
-  var logoutTime = new Date(currentTime.getTime() + 5 * 60 * 1000); // إضافة خمس دقائق للوقت الحالي
-
-  // تأجيل تنفيذ الخروج إلى وقت الخروج المحدد
-  setTimeout(function() {
-    // حذف ملف تعريف الارتباط
-    document.cookie = 'username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-
-    // إعادة توجيه المستخدم إلى صفحة تسجيل الدخول
-    window.location.href = 'login.html';
-  }, logoutTime - currentTime); // الفرق بين وقت الخروج والوقت الحالي
-
-  window.location.href = 'java_hail.html';
-}
+var qaList = [
+  { question: "كم رقم مكتب الدكتور محمد", answer: "s295 رقم مكتب الدكتور محمد هو" },
+  { question: "احتاج ايميل الدكتور ضياء", answer: "d.uliyan@liveuohedu.onmicrosoft.com" },
+  { question: "ما هي فكرة المشروع نهاية مقرر المادة", answer: "هو مشروع بسيط يعتمد على فهمك للمقرر واثبات معلوماتك" },
+  { question: "احتاج ايميل الدكتور ضياء", answer: "d.uliyan@liveuohedu.onmicrosoft.com" },
+  { question: "ماهو التدريب التعاوني وما فكرته", answer: "هو عبارة عن تطيبق كل ما درسته في احدى الشركات المختصه في مجالك و يجعلك تمارس الحياة الوظيفيه و تتيح لك الفرصه بأختيار الشركه المناسبه لك" },
+  { question: "متى تأسست جامعة حائل", answer: "في تاريخ 7 يونيو 2005" },
+  { question: "متى فتح واغلاق مكتبة الكليه", answer: "تفتح الساعه ٨ صباحًا وتغلق الساعه ٢ مساءً" },
+  { question: "ماهي خطوات الاستعلام عن نتائج الاختبارات", answer: "البنر - السجل الاكاديمي - كشف الدرجات" },
+  { question: "كيف يمكن معالجة الفشل واستحضار عوامل النجاح في الحياة الجامعية", answer: "<li>اطلع دوماً على آخر المستجدات .</li><li>حضر دائماً قبل ذهابك لقاعة الدراسة .</li><li>تعرف على أساتذتك .</li><li>رتب أولوياتك، واحضر الحفلات .</li><li>استمر بالتطور .</li><li>قرر أي تخصص تريد والتزم به .</li><li>لا تتردد في طلب المساعدة .</li>" },
+  { question: "من هو عميد كلية علوم وهندسة الحاسب الالي", answer: "د/ احمد الصعب التميمي" },
+  { question: "كم عدد ساعات تخصص علوم الحاسب", answer: "132 ساعة" },
+  { question: "ماذا يحتاج الطالب الجامعي", answer: "القراءة من أهم المهارات التي يحتاجها الطالب خلال فترة الجامعة وبعدها، فالقراءة تزيد من خبرتك الثقافية والحياتية والمجتمعية وتجعلك شخص مثقفاً فاهماً واعياً لما يدور حولك في كافة المجالات وعلى رأسها مجال عملك وبجانبها المجالات الأخرى مما يجعلك تستطيع التحاور والتشاور مع الأشخاص الأخرين." },
+  { question: "ماذا يدرس الطالب في السنة التحضيرية", answer: "في أي من مسارين أم الطبي الصحي يشمل كليات الطب وطب االسنان و العلوم الطبية التطبيقية أو مسار العلمي الهندسي ويشمل كليات الهندسة ، العلوم ، علوم الحاسب والمعلومات." },
+  { question: "هل السنة التحضيرية اجباريه", answer: "تعتبر السنة التحضيرية إجبارية لجميع الطلبة المقبولين والمرشحين في مختلف البرامج" },
+  { question: "ما فائدة السنة التحضيرية", answer: "تتيح البرامج التحضيرية للطالب تحسين مهاراته الأكاديمية، وتطويرها في المجال الذي تم اختياره، الأمر الذي يحتاجه للنجاح في التعليم الجامعي، وتتمثل هذه المهارات في الكتابة الأكاديمية، وإدارة الوقت،" },
+  { question: "ماهي تخصصات المسار الصحي", answer: "المسار الصحي الموحد للكليات الصحية : الطب، طب الأسنان، الصيدلة والعلوم الطبية التطبيقية في تخصصاتها (علوم المختبرات الإكلينيكية، العلاج التنفسي، العلاج الوظيفي، تقنية القلب (القسطرة القلبية)، علوم الأشعة، الخدمات الطبية الطارئة، تقنية التخدير)." },
+  { question: "ماهي خطوات الاستعلام عن نتائج الاختبارات", answer: "البنر - السجل الاكاديمي - كشف الدرجات" },
+];
 
 
 
+document.getElementById("send-button").addEventListener("click", function() {
+  var inputMessage = document.getElementById("input-message");
+  var chatLog = document.getElementById("chat-log");
 
+  var userQuestion = document.createElement("p");
+  userQuestion.innerHTML = "<span class='user-message'>أنت:</span><br><br><span class='u-message'> " + inputMessage.value+"</span><hr>";
+  chatLog.appendChild(userQuestion);
 
-      
-    else if (username === 'intro' && password === 'intro002') {
-      // إنشاء ملف تعريف الارتباط
-      document.cookie = 'username=' + username + '; expires=30; path=/';
-      window.location.href = 'intro.html';
-    }
-    else if (username === 'logic' && password === 'logic02') {
-      // إنشاء ملف تعريف الارتباط
-      document.cookie = 'username=' + username + '; expires=30; path=/';
-      window.location.href = 'logic.html';
-    }
-    else {
-      errorMessage.text('اسم المستخدم أو كلمة المرور غير صحيحة');
-    }
-  });
+  var answer = getAnswer(inputMessage.value);
+  var botAnswer = document.createElement("p");
+  botAnswer.innerHTML = "<span class='bot-message'>البوت:</span><br><br> " +"<span class='answer'>" +answer+"</span><hr>";
+  chatLog.appendChild(botAnswer);
 
-
-  
-
- 
-  
-
-
-
-
-  
+  inputMessage.value = "";
 });
+
+document.getElementById("clear-button").addEventListener("click", function() {
+  var chatLog = document.getElementById("chat-log");
+  chatLog.innerHTML = "";
+});
+
+function getAnswer(question) {
+  for (var i = 0; i < qaList.length; i++) {
+      if (question === qaList[i].question) {
+          return qaList[i].answer;
+      }
+  }
+  
+  return "عذرًا، لا يمكنني العثور على الإجابة المناسبة في الوقت الحالي.";
+}
